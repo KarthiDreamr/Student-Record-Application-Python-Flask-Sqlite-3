@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Student Details</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+  </head>
+<body>
+
+<h2>Student Details</h2>
+
+{% for student in students %}
+  <p>Name: {{ student.name }}</p>
+  <p>Age: {{ student.age }}</p>
+  <p>Grade: {{ student.grade }}</p>
+  <hr>
+{% endfor %}
+
+</body>
+</html>
